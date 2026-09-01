@@ -374,3 +374,29 @@
     height: 48px;
   }
 }
+
+/* === FIX 1: MENU OVERLAP — Ensure side panels clear sticky nav (60px) === */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #000;
+}
+.content-shell, #library-content {
+  padding-top: 70px;
+}
+/* Catch any React-rendered Master Map / sidebar elements */
+[class*="master-map"],
+[class*="side-panel"],
+[class*="sidebar"]:not(.nx-nav-links),
+.master-map-panel,
+.nx-master-map,
+.federation-map {
+  top: 60px !important;
+  max-height: calc(100vh - 60px) !important;
+  z-index: 999;
+}
+
+/* === FIX 4: ONE-MENU – keep reading area spacious === */
+.librarian-bar { display: none !important; }
