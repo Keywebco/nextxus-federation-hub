@@ -4,14 +4,14 @@ window.FED_CONFIG = {
   geminiApiKey: "",
   version: "1.1.0",
   federation: "NextXus",
-  sites: ["nextxus.tech","nextxus.online","nextxus.org","nextxus.studio","nextxus.help","next-xus.com","nextxus.space"]
+  sites: ["nextxus.tech","next-xus.org","nextxus.org","nextxus.studio","nextxus.help","next-xus.com","nextxus.space"]
 };
 
 window.FED_GOOGLE_CLIENT_ID = window.FED_CONFIG.googleClientId;
 
 window.FED_NAV = [
   {label:"The Throne",url:"https://nextxus.tech"},
-  {label:"The Core",url:"https://nextxus.online"},
+  {label:"The Core",url:"https://next-xus.org/core/"},
   {label:"The Library",url:"https://nextxus.org"},
   {label:"The Sanctuary",url:"https://nextxus.studio"},
   {label:"The University",url:"https://nextxus.help"},
